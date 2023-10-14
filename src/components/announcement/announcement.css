@@ -1,0 +1,14 @@
+.announcement {
+  height: 40px;
+  background-color: teal;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+@media only screen and (max-width: 600px) {
+  .announcement {
+    font-size: 12px;
+}}

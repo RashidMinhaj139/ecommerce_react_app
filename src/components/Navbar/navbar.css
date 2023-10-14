@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 60px;
+  width: 100%;
+  /* border: 1px solid red; */
+  /* background-color: aqua; */
+}
+.wrapper {
+  background-color: rgb(242, 246, 246);
+
+  /* top right bottom  left */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  /* border: 1px solid blue; */
+  flex-wrap: wrap;
+}
+.left {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.language span {
+  font-size: 20px;
+  cursor: pointer;
+  color: blue;
+}
+.search_container {
+  /* border: 1px solid rgb(112, 110, 110); */
+  display: flex;
+  align-items: center;
+  /* margin-left: 2px; */
+  /* padding: 50px; */
+}
+.search_container_input {
+  /* margin-bottom: 20px; */
+  border: none;
+  width: 280px;
+  height: 20px;
+  /* border: 1px solid red; */
+  margin-left: 10px;
+}
+.search_icon {
+  /* border: 1px solid rgb(112, 110, 110); */
+
+  margin-top: 3px;
+}
+.center {
+  text-align: center;
+  flex: 1;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.menu_item {
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 25px;
+}
+/* responsives */
+@media only screen and (max-width: 380px) {
+  .container {
+    height: 50px;
+    /* color: red; */
+    /* border: 1px solid red; */
+  }
+  .wrapper {
+    padding: 10px 0px;
+  }
+  .language {
+    display: none;
+  }
+  .search_container {
+    align-items: center;
+  }
+  .search_container_input {
+    width: 270px;
+    height: 30px;
+    /* color: red; */
+    /* border: 1px solid red; */
+    align-items: center;
+    margin-right: 20px;
+  }
+  .search_icon {
+    /* border: 1px solid red; */
+
+    margin-left: -14px;
+  }
+  .center {
+    margin-left: 11px;
+    font-size: 18px;
+    text-align: left;
+  }
+  .right {
+    /* border: 1px solid red; */
+  margin-top: 10px;
+  padding-left: -20px;
+  /* margin-left: -10px; */
+    font-size: 10px;
+    flex: 2;
+    justify-content: center;
+  }
+  .menu_item {
+    font-size: 12px;
+    margin-right: 2px;
+  }
+}
